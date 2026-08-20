@@ -1,0 +1,27 @@
+machine: CROCODILE-M1
+version: 1.0.0
+
+lags:
+  - 0
+  - 1
+  - 2
+  - 3
+  - 5
+  - 8
+  - 13
+  - 21
+
+horizons:
+  - 3
+  - 7
+  - 23
+
+causal_design:
+  preferred_assignment: randomized
+  pretrend_check: true
+  placebo_shift: 23
+  report_ate: true
+  report_did: true
+
+freeze:
+  hash: sha256

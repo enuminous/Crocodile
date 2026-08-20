@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CROCODILE Intervention Record",
+  "type": "object",
+  "required": [
+    "experiment_id",
+    "unit_id",
+    "timestamp",
+    "treatment"
+  ],
+  "properties": {
+    "experiment_id": {
+      "type": "string"
+    },
+    "unit_id": {
+      "type": "string"
+    },
+    "timestamp": {
+      "type": "string"
+    },
+    "treatment": {
+      "type": "integer",
+      "enum": [
+        0,
+        1
+      ]
+    },
+    "intervention_name": {
+      "type": "string"
+    },
+    "assignment_method": {
+      "type": "string"
+    },
+    "outcome": {
+      "type": "number"
+    },
+    "post": {
+      "type": "integer",
+      "enum": [
+        0,
+        1
+      ]
+    }
+  }
+}
